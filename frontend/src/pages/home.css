@@ -1,0 +1,179 @@
+/* General Styles */
+.home-container {
+  min-height: 103vh;
+  background: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Home Title */
+.home-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  font-family: cursive; /* Modern and elegant font */
+  color: rgb(50, 5, 171);
+  margin-top: 4.7rem;
+  margin-bottom: 1.7rem;
+  text-align: center;
+}
+
+/* Home Grid */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Fixed 2 columns */
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Home Card */
+.home-card {
+  background: rgb(67, 18, 203);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Content */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Card Icon */
+.card-icon {
+  margin-bottom: 1rem;
+}
+
+/* Card Title */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 15;
+  margin-top: 2.5rem;
+}
+
+.menu-icon {
+  cursor: pointer;
+  color: #333;
+}
+
+/* Side Menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 230px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+/* Side Menu Header */
+.side-menu-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  align-items: center; /* Center the X icon vertically */
+  height: 60px; /* Add height to the header */
+}
+
+.return-symbol {
+  cursor: pointer;
+  margin-top: 2rem; /* Move the X icon down */
+}
+
+/* Side Menu Content */
+.side-menu-content {
+  padding: 20px;
+  margin-top: 5rem;
+}
+
+.side-menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+.side-menu-item:hover {
+  color: #007bff;
+}
+
+.side-menu-icon {
+  margin-right: 10px;
+}
+
+/* Side Menu Footer */
+.side-menu-footer {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0 20px; /* Add padding to align with the content */
+}
+
+.footer-logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 0; /* Remove margin to eliminate space */
+}
+
+.footer-address {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0; /* Remove margin to eliminate space */
+}
+
+/* Corner Logo */
+.corner-logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+.logo-shape {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  border-radius: 15px; /* Rounded corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-image {
+  width: 150%; /* Adjust logo image size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners to the image */
+  margin-top: 1rem;
+}

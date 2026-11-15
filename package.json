@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "create-react-app": "^5.1.0",
+    "framer-motion": "^12.5.0",
+    "qrcode.react": "^4.2.0",
+    "react-icons": "^5.5.0",
+    "uuid": "^11.1.0",
+    "vite": "^6.2.1"
+  }
+}

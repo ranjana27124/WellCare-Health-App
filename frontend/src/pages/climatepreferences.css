@@ -1,0 +1,114 @@
+/* General Styles */
+.climate-preferences-container {
+  min-height: 100vh;
+  min-width: 47vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+/* Title */
+.climate-preferences-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+/* Error Message */
+.error-message {
+  color: #ff4f4f;
+  background: #ffe6e6;
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Form */
+.climate-preferences-form {
+  background: white;
+  padding: 2rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.9rem;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+/* Input Fields */
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #4facfe;
+}
+
+/* Dropdown Styling */
+select.form-input {
+  appearance: none; /* Remove default arrow */
+  background: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234facfe'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E") no-repeat right 0.75rem center/12px 12px;
+  background-color: white;
+  cursor: pointer;
+}
+
+select.form-input:focus {
+  border-color: #4facfe;
+  outline: none;
+}
+
+/* Next Button */
+.next-button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #4facfe; /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 1rem; /* Add margin to separate from the form fields */
+}
+
+.next-button:hover {
+  background: #00f2fe; /* Hover color */
+}
+
+.next-button:disabled {
+  background: #ccc; /* Disabled state color */
+  cursor: not-allowed;
+}
+
+.form-input {
+  font-size: 0.8rem; /* Adjusted font size for mobile */
+}
+
+.next-button {
+  font-size: 0.8rem; /* Adjusted font size for mobile */
+}

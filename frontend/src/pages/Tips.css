@@ -1,0 +1,108 @@
+/* General Styles */
+.tips-container {
+    max-width: 100%; /* Full width */
+    margin: 0 auto;
+    padding: 15px;
+    font-family: "Arial, sans-serif";
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-height: 110vh;
+    min-width: 44vh;
+  }
+  
+  .tips-title {
+    font-size: 1.25rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+    margin-top: 5rem;
+  }
+  
+  /* Tips Card */
+  .tips-card {
+    background: white;
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tips-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .tips-icon {
+    margin-right: 6px;
+    color: #007bff;
+  }
+  
+  .tips-card h2 {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Tips List */
+  .tips-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tips-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    font-size: 0.75rem;
+    color: #555;
+  }
+  
+  .check-icon {
+    margin-right: 6px;
+    color: #28a745;
+  }
+  
+  /* Back Button */
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .tips-container {
+      padding: 10px;
+    }
+  
+    .tips-title {
+      font-size: 1rem;
+    }
+  
+    .tips-card h2 {
+      font-size: 0.875rem;
+    }
+  
+    .tips-list li {
+      font-size: 0.7rem;
+    }
+  
+    .back-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }

@@ -1,0 +1,139 @@
+
+/* Welcome Main Container */
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  background-color: white;
+  text-align: center;
+  color: rgb(50, 5, 171);
+
+  padding: 15px 20px;
+  overflow-x: hidden;
+}
+
+/* Welcome Title */
+.welcome-title {
+  font-size: 5vw;
+  font-weight: bold;
+  font-family: cursive;
+  color: rgb(50, 5, 171);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+  margin: 0 0 10px 0;
+}
+
+/* Video Section */
+.welcome-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Welcome Video */
+.welcome-video {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  max-height: 320px;
+  object-fit: contain;
+
+  margin: 0;
+  background-color: transparent;
+}
+
+/* Description */
+.welcome-description {
+  font-size: 2.1rem;
+  max-width: 1000px;
+  width: 100%;
+
+  margin: 15px 0 15px 0;
+  color: rgb(50, 5, 171);
+  line-height: 1.5;
+}
+
+/* Buttons */
+.button-container {
+  margin-top: 10px;
+
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+
+  transition: 0.3s ease-in-out;
+  max-width: 200px;
+}
+
+/* Signup Button */
+.signup-btn {
+  background-color: #ff7eb3;
+  color: white;
+}
+
+.signup-btn:hover {
+  background-color: #ff4f8b;
+}
+
+/* Login Button */
+.login-btn {
+  background-color: rgb(24, 11, 210);
+  color: #f2f4f7;
+  border: 1px solid #4ffedb;
+}
+
+.login-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+  .welcome-container {
+    min-height: 100vh;
+    padding: 20px 12px;
+  }
+
+  .welcome-title {
+    font-size: 10vw;
+  }
+
+  .welcome-video {
+    width: 100%;
+    max-width: 350px;
+    max-height: 280px;
+  }
+
+  .welcome-description {
+    font-size: 1.1rem;
+    max-width: 100%;
+  }
+
+  .button-container {
+    gap: 10px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px 18px;
+  }
+}

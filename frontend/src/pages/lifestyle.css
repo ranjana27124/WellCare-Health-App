@@ -1,0 +1,120 @@
+/* General Styles */
+.lifestyle-container {
+  min-height: 100vh;
+  background: white;
+  min-height: 150vh; /* Full screen height */
+  min-width: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+/* Title */
+.lifestyle-title {
+  font-size: 1.5rem; /* Reduced font size */
+  font-weight: bold;
+  color: black;
+  margin-bottom: 1rem; /* Reduced margin */
+  text-align: center;
+}
+
+/* Error Message */
+.error-message {
+  color: #ff4f4f;
+  background: #ffe6e6;
+  padding: 0.5rem; /* Reduced padding */
+  border-radius: 6px;
+  margin-bottom: 0.75rem; /* Reduced margin */
+  text-align: center;
+  font-size: 0.8rem; /* Reduced font size */
+}
+
+/* Form */
+.lifestyle-form {
+  background: white;
+  padding: 1rem; /* Reduced padding */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px; /* Reduced max-width */
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 1rem; /* Reduced margin */
+}
+
+.form-label {
+  display: block;
+  font-size: 0.8rem; /* Reduced font size */
+  color: black;
+  margin-bottom: 0.25rem; /* Reduced margin */
+}
+
+/* Input Fields */
+.form-input {
+  width: 100%;
+  padding: 0.5rem; /* Reduced padding */
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem; /* Reduced font size */
+  outline: none;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.form-input:focus {
+  border-color: #4facfe;
+}
+
+/* Next Button */
+.next-button {
+  width: 100%;
+  padding: 0.5rem; /* Reduced padding */
+  background: #4facfe;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem; /* Reduced font size */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 0.75rem; /* Reduced margin */
+}
+
+.next-button:hover {
+  background: #00f2fe;
+}
+
+.next-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 480px) {
+  .lifestyle-container {
+    padding: 0.5rem;
+  }
+
+  .lifestyle-title {
+    font-size: 1.25rem; /* Adjusted font size for mobile */
+  }
+
+  .lifestyle-form {
+    width: 95%;
+    padding: 0.75rem; /* Further reduced padding for mobile */
+  }
+
+  .form-input {
+    font-size: 0.8rem; /* Adjusted font size for mobile */
+  }
+
+  .next-button {
+    font-size: 0.8rem; /* Adjusted font size for mobile */
+  }
+}

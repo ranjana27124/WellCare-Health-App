@@ -1,0 +1,135 @@
+/* General Styles */
+.admin-dashboard {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    height: 100vh; /* Full height */
+    overflow-y: auto; /* Enable vertical scrollbar */
+  }
+  
+  .admin-dashboard h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .admin-dashboard h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #34495e;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+  }
+  
+  /* Logout Button */
+  .logout-button {
+    position: fixed; /* Fixed position */
+    top: 20px; /* Distance from top */
+    right: 20px; /* Distance from right */
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+  
+  .logout-button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Data Section Styles */
+  .data-section {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .data-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .data-section th,
+  .data-section td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .data-section th {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .data-section tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .data-section tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Loading and Error Messages */
+  .loading,
+  .error-message {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
+  .loading {
+    color: #3498db;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .data-section table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    .admin-dashboard h1 {
+      font-size: 2rem;
+    }
+  
+    .admin-dashboard h2 {
+      font-size: 1.5rem;
+    }
+  
+    .data-section th,
+    .data-section td {
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .admin-dashboard {
+      padding: 10px;
+    }
+  
+    .data-section {
+      padding: 10px;
+    }
+  
+    .admin-dashboard h1 {
+      font-size: 1.8rem;
+    }
+  
+    .admin-dashboard h2 {
+      font-size: 1.3rem;
+    }
+  }
